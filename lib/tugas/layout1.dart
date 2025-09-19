@@ -73,6 +73,7 @@ class TugasLayout1 extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(12)),
                       color: const Color.fromARGB(255, 240, 247, 255),
                       ),
+
                       child: Row(
                         children: [
                         Container(
