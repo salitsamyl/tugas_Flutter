@@ -12,15 +12,24 @@ class Layout3 extends StatelessWidget {
           children: [
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [Container(
-                
                 child: Text("Training", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 23 ),)),
-              Container(child: Icon(Icons.calendar_month),
-              ),
-        
+                Icon(Icons.chevron_left),
+                Icon(Icons.calendar_month),
+                Icon(Icons.chevron_right)
               ],
-            )
+            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                child: Text("Your Program", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 18 ),
+              ),
+              ),
+            ],
+          ),
           ],
         ),
       ),
