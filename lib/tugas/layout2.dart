@@ -4,6 +4,7 @@ class TugasLayout2 extends StatelessWidget {
   const TugasLayout2({super.key});
 
   @override
+  
   Widget build(BuildContext context) {
     return Scaffold(
       body: SizedBox(
