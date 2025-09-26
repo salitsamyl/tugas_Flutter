@@ -14,8 +14,16 @@ class Layout3 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [Container(
-                child: Text("Training", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 23 ),)),
-            
+                child: Text("Training", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 23 ),)
+                ),
+                Row(
+                  children: [
+                    Icon(Icons.chevron_left),
+                    Icon(Icons.calendar_month, size: 20,),
+                    Icon(Icons.chevron_right)
+
+                  ],
+                ),
               ],
             ),
             SizedBox(height: 20,),
@@ -24,7 +32,7 @@ class Layout3 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
                 Text("Your Program", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 17 ),),
-                Text("Details", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 15, color: Colors.blue),),
+                Text("Details >", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 15, color: Colors.blue),),
 
             ],
           ),
@@ -48,7 +56,12 @@ class Layout3 extends StatelessWidget {
                   Text("Lets Toning", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                   Text("and Glutes Workout", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                   SizedBox(height: 40,),
-                  Text("60 min", style: TextStyle(color: Colors.white),)
+                  Row(
+                    children: [
+                      Icon(Icons.punch_clock),
+                      Text("60 min", style: TextStyle(color: Colors.white),),
+                    ],
+                  )
                 ],
               ),
             ),
