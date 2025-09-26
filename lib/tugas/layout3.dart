@@ -53,7 +53,7 @@ class Layout3 extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20,),
+          SizedBox(height: 50,),
           Stack(
             children: [     
               Container(
@@ -64,9 +64,12 @@ class Layout3 extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill)
                 ),
-                ),           
-            ],
-          )
+                ),   
+                Positioned(
+                  bottom: 10,
+                  child: Image.asset("gambar/figure1.png"))        
+            ],    
+          ),
           ],
         ),
       ),
