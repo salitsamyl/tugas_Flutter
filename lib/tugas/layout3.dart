@@ -30,7 +30,7 @@ class Layout3 extends StatelessWidget {
           ),
           SizedBox(height: 20,),
           Container(
-            height: 200,
+            height: 180,
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(topRight: Radius.circular(120), topLeft: Radius.circular(20),
@@ -47,7 +47,7 @@ class Layout3 extends StatelessWidget {
                   Text("Next Workout", style: TextStyle(color: Colors.white),),
                   Text("Lets Toning", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                   Text("and Glutes Workout", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
-                  SizedBox(height: 60,),
+                  SizedBox(height: 40,),
                   Text("60 min", style: TextStyle(color: Colors.white),)
                 ],
               ),
@@ -84,10 +84,35 @@ class Layout3 extends StatelessWidget {
                   ), 
                 ],    
               ),
-              SizedBox(height: 20,),
-                      Column(
-                        children: [Text("Area of Focus" , style: TextStyle(FontW),),
-                        ],
+              SizedBox(height: 30,),
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("Area of Focus" , style: TextStyle(fontSize: 16, ),),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  width: 225,
+                                  height: 165,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                                    image: DecorationImage(image: AssetImage("gambar/ex3.png"), fit: BoxFit.fill)
+                                  ),
+                                ),
+                                Container(
+                                  width: 225,
+                                  height: 165,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                                    image: DecorationImage(image: AssetImage("gambar/ex4.png"), fit: BoxFit.fill)
+                                  ),)
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
           ],
         ),
