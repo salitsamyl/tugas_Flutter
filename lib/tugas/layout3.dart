@@ -39,7 +39,7 @@ class Layout3 extends StatelessWidget {
           ),
           SizedBox(height: 20,),
           Container(
-            height: 180,
+            height: 190,
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(topRight: Radius.circular(120), topLeft: Radius.circular(20),
@@ -68,18 +68,16 @@ class Layout3 extends StatelessWidget {
                           Text("60 min", style: TextStyle(color: Colors.white),),
                         ],
                       ),
-                          Align(
-                            child: Container(
+                        Container(
                               margin: EdgeInsets.only(right: 30, ),
                               height: 50,
                               width: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(50)),
-                                color: Colors.white,
-                              
-                            )
-                                                  ),
-                          )
+                                color: Colors.white, 
+                            ),
+                            child: Icon(Icons.play_arrow, color: Colors.purple,),
+                            ),
                     ],
                   )
                 ],
@@ -92,16 +90,16 @@ class Layout3 extends StatelessWidget {
             children: [     
               Container(
                 width: 900,
-                height: 110,
+                height: 100,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill)
                 ),
                 ),   
                 Positioned(
-                  left: 5,
-                  bottom: 35,
-                  child: Image.asset("gambar/figure1.png", width: 95,),
+                  left: 15,
+                  bottom: 30,
+                  child: Image.asset("gambar/figure1.png", width: 90,),
                   ),
                   Positioned(
                     right: 110,
