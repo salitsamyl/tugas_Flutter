@@ -57,12 +57,14 @@ class Layout3 extends StatelessWidget {
           Stack(
             children: [     
               Container(
+                width: 900,
+                height: 110,
+                clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
-                  image: DecorationImage(image: AssetImage("gambar/card.jpg"))
+                  image: DecorationImage(image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill)
                 ),
-                child: Image.asset("gambar/card.jpg", width: 1000 , fit: BoxFit.cover,)),
-              
+                ),           
             ],
           )
           ],
