@@ -13,7 +13,8 @@ class Layout3 extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Container(
+              children: [
+                Container(
                 child: Text("Training", style: TextStyle(fontWeight:FontWeight.bold,fontSize: 23 ),)
                 ),
                 Row(
@@ -55,11 +56,30 @@ class Layout3 extends StatelessWidget {
                   Text("Next Workout", style: TextStyle(color: Colors.white),),
                   Text("Lets Toning", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
                   Text("and Glutes Workout", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
-                  SizedBox(height: 40,),
+                  SizedBox(height: 30,),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Icon(Icons.punch_clock),
-                      Text("60 min", style: TextStyle(color: Colors.white),),
+                      Row(
+                        children: [
+                          Icon(Icons.timer, size: 15, color: Colors.white,),
+                          SizedBox(width: 5,),
+                          Text("60 min", style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+                          Align(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 30, ),
+                              height: 50,
+                              width: 50,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(50)),
+                                color: Colors.white,
+                              
+                            )
+                                                  ),
+                          )
                     ],
                   )
                 ],
