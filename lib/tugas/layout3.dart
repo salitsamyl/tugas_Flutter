@@ -55,10 +55,14 @@ class Layout3 extends StatelessWidget {
           ),
           SizedBox(height: 20,),
           Stack(
-            children: [
+            children: [     
               Container(
-                child: Positioned(child: Image.asset("gambar/card.jpg", width: 600 ,) ),
-              )
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  image: DecorationImage(image: AssetImage("gambar/card.jpg"))
+                ),
+                child: Image.asset("gambar/card.jpg", width: 1000 , fit: BoxFit.cover,)),
+              
             ],
           )
           ],
