@@ -53,7 +53,7 @@ class Layout3 extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 50,),
+          SizedBox(height: 40,),
           Stack(
             clipBehavior: Clip.none,
             children: [     
@@ -71,14 +71,24 @@ class Layout3 extends StatelessWidget {
                   child: Image.asset("gambar/figure1.png", width: 95,),
                   ),
                   Positioned(
+                    right: 110,
+                    top: 20,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("You are doing great")
+                        Text("You are doing great", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 17),),
+                        Text("keep it up", style: TextStyle(color: Colors.grey, fontSize: 15),),
+                        Text("stick to your plan", style: TextStyle(color: Colors.grey, fontSize: 15),),
                       ],
                   ),
-                  ),  
-            ],    
-          ),
+                  ), 
+                ],    
+              ),
+              SizedBox(height: 20,),
+                      Column(
+                        children: [Text("Area of Focus" , style: TextStyle(FontW),),
+                        ],
+                      ),
           ],
         ),
       ),
