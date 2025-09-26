@@ -55,19 +55,28 @@ class Layout3 extends StatelessWidget {
           ),
           SizedBox(height: 50,),
           Stack(
+            clipBehavior: Clip.none,
             children: [     
               Container(
                 width: 900,
                 height: 110,
-                clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   image: DecorationImage(image: AssetImage("gambar/card.jpg"), fit: BoxFit.fill)
                 ),
                 ),   
                 Positioned(
-                  bottom: 10,
-                  child: Image.asset("gambar/figure1.png"))        
+                  left: 5,
+                  bottom: 35,
+                  child: Image.asset("gambar/figure1.png", width: 95,),
+                  ),
+                  Positioned(
+                    child: Column(
+                      children: [
+                        Text("You are doing great")
+                      ],
+                  ),
+                  ),  
             ],    
           ),
           ],
